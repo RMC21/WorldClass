@@ -110,7 +110,8 @@ $('.owl-carousel').owlCarousel({
           loop:false
       }
   }
-})
+});
+
 })(jQuery); // End of use strict
 
 

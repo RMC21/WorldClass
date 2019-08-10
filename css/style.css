@@ -777,6 +777,12 @@ body:-webkit-scrollbar {
     padding: 5rem 0 5rem 0
 }
 
+#destinos .row, #servicios .row, .sección-nosotros.row, #contacto .row{
+    margin: 0
+}
+
+ 
+
 
 
 
