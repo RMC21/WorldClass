@@ -1,9 +1,3 @@
-window.onload = function (){
-  $('#carga').fadeOut();
-  $('body').removeClass('no-scroll')
-
-}
-
 $( document ).ready(function() {
 
   "use strict"; // Start of use strict
