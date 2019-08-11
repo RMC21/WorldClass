@@ -58,7 +58,7 @@
         }
 
     #mainNav.nav-cambio span {
-        font-size: 1.8vw
+        font-size: 1.5vw
         }
         
     #mainNav.nav-cambio {
@@ -115,6 +115,7 @@
         }
 
     #destinos {
+        position: relative;
         height: 100vh;
         height: 100vw;
         }
@@ -162,5 +163,32 @@
                 padding: 0;
             }
      }
+
+    #destinos .s-intro {
+        height: 100vh;
+        width: 40%;
+        float: left;
+        padding: 2vw
+    }
+
+   #destinos .s-promo, #destinos .s-nacional, #destinos .s-internacional, #destinos .s-paquete {
+        position: relative;
+        height: 100vh;
+        width: 15%;
+        float: left
+        }
+
+    #destinos .s-intro h1 {
+        font-size: 3vw
+    }
+
+    #destinos .s-titulo {
+        position: absolute;
+        bottom: 10vh
+    }
+
+    #destinos .s-titulo h3 {
+        font-size: 2vw
+    }
 
     
