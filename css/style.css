@@ -781,6 +781,24 @@ body:-webkit-scrollbar {
     margin: 0
 }
 
+#carousel-inicio {
+    position: absolute;
+    color: #ffffff
+}
+
+#inicio .RRSS {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#inicio .mensaje-pie {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
  
 
 
