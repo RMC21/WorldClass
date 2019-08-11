@@ -168,7 +168,7 @@
         height: 100vh;
         width: 30%;
         float: left;
-        padding: 2vw
+        padding: 10vw 2vw
     }
 
    #destinos .s-promo, #destinos .s-nacional, #destinos .s-internacional, #destinos .s-paquete {
