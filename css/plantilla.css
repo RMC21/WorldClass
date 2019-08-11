@@ -222,6 +222,7 @@ transition: all 1s ease-in-out;
     -webkit-transform:scale3d(1.1,1.1,1) rotate(.01deg);
     transform:scale3d(1.1,1.1,1) rotate(.01deg);
     opacity:.4
+    
 }
 
 .sección:hover .titulo h1 {
