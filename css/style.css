@@ -33,6 +33,12 @@
     src: url(../font/Oswald/Oswald-VariableFont_wght.ttf);
     }
 
+    body {
+    overflow-x:hidden;
+    overflow-y:auto;
+    font-family: Oswald-Regular
+    }
+
     #inicio {
     height: 100vh;
     width: 100%;
@@ -138,23 +144,59 @@
         z-index: 1;
         }
 
-        #destinos .s-intro {
-            height: auto;
-            width: 100%;
-            float: left;
-            padding: 2vw
+    #destinos .s-intro {
+        height: auto;
+        width: 100%;
+        float: left;
+        padding: 2vw 50vw 2vw 2vw;
+        -webkit-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
         }
 
    #destinos .s-promo, #destinos .s-nacional, #destinos .s-internacional, #destinos .s-paquete {
         position: relative;
         height: 25vh;
         width: 50%;
-        float: left
+        float: left;
+        -webkit-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
         }
 
-    #destinos .s-intro h1 {
-        font-size: 3vw
+    .s-detalles {
+        position: absolute;
+        top: 10vh;
+        color: red;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+        padding: 3vh;
+        z-index: 1;
     }
+
+    .s-detalles .intro {
+        font-size: 6vh
+    }
+
+    .s-detalles p {
+        font-size: 3.5vh        
+    }
+
+    #destinos .s-promo:hover .imagen, #destinos .s-nacional:hover .imagen, #destinos .s-internacional:hover .imagen, #destinos .s-paquete:hover .imagen {
+        transform: scale(1.2) !important;
+        opacity:.4;
+        cursor: pointer;
+        }
+    
+    #destinos .s-promo:hover .item-texto, #destinos .s-nacional:hover .item-texto, #destinos .s-internacional:hover .item-texto, #destinos .s-paquete:hover .item-texto {
+        opacity: 0;
+    }
+
+    #destinos .s-promo:hover .s-detalles, #destinos .s-nacional:hover .s-detalles, #destinos .s-internacional:hover .s-detalles, #destinos .s-paquete:hover .s-detalles {
+        opacity: 1;
+    }
+
+    #destinos .s-intro h1 {
+        font-size: 6vw
+        }
 
     #destinos .s-titulo {
         position: absolute;
@@ -167,17 +209,41 @@
 
     #destinos .s-titulo h3 {
         font-size: 2vw;
-        font-family: Oswald-Light
+        font-family: Oswald-Light;
+        transition: all .5s ease-in-out
     }
 
     #destinos .s-titulo span {
         font-size: 2vw;
-        font-family: Oswald-SemiBold
+        font-family: Oswald-SemiBold;
+        transition: all .5s ease-in-out
+    }
+
+    #destinos .s-promo:hover .s-titulo h3, #destinos .s-nacional:hover .s-titulo h3, #destinos .s-internacional:hover .s-titulo h3, #destinos .s-paquete:hover .s-titulo h3 {
+        font-size: 2.5vw;
+    }
+
+    #destinos .s-promo:hover .s-titulo span, #destinos .s-nacional:hover .s-titulo span, #destinos .s-internacional:hover .s-titulo span, #destinos .s-paquete:hover .s-titulo span {
+        font-size: 2.5vw !important;
     }
 
     #s-carousel .carousel-item {
         height: 25vh;
         width: 100%
+    }
+
+    .item-texto {
+        position: relative;
+        color: #ffffff;
+        top: 10vh;
+        text-align: center;
+        z-index: 1;
+        transition: all .5s ease-in-out;
+        opacity: 1;
+    }
+
+    .item-texto h1 {
+        font-size: 5vh
     }
 
     @media (max-width: 576px) {
@@ -191,7 +257,7 @@
         }
 
         #destinos .s-titulo span {
-            font-size: 4.5vw;
+            font-size: 5vw;
         }
     
     }
@@ -235,13 +301,19 @@
             }
 
         #mainNav.nav-cambio {
-                background-color: blue;
-                padding: 0;
+            background-color: blue;
+            padding: 0;
             }
 
-            #destinos .s-intro {
-                height: 100vh;
-                width: 30%;
+        #destinos .s-intro {
+            height: 100vh;
+            width: 30%;
+            padding: 10vw 2vw
+            }
+
+
+        #destinos .s-intro h1 {
+            font-size: 3.5vw
             }
     
        #destinos .s-promo, #destinos .s-nacional, #destinos .s-internacional, #destinos .s-paquete {
@@ -253,6 +325,8 @@
             height: 100vh;
             width: 100%
         }
+
+
             
 
      }
