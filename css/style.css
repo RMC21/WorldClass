@@ -159,7 +159,7 @@
     #destinos .s-titulo {
         position: absolute;
         width: 100%;
-        bottom: 2vh;
+        bottom: 0;
         padding: 2vh;
         color: #ffffff;
         z-index: 1;
@@ -178,6 +178,22 @@
     #s-carousel .carousel-item {
         height: 25vh;
         width: 100%
+    }
+
+    @media (max-width: 576px) {
+
+        #destinos .s-intro h1 {
+            font-size: 5vw
+        }
+
+        #destinos .s-titulo h3 {
+            font-size: 4vw;
+        }
+
+        #destinos .s-titulo span {
+            font-size: 4.5vw;
+        }
+    
     }
 
     @media (min-width: 768px) { 
