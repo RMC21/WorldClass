@@ -244,11 +244,11 @@
             }
         
         #contacto .datos .datos-intro h1{
-            font-size: 5vh
+            font-size: 8vh
            }
 
         #contacto .datos .datos-intro p{
-            font-size: 2.5vh
+            font-size: 4vh
             }
 
         #contacto .datos .datos-item {
@@ -293,6 +293,15 @@
             padding: 3vh 1vh 3vh 0;
             }
 
+        #contacto .datos .datos-intro h1{
+            font-size: 5vh
+            }
+    
+        #contacto .datos .datos-intro p{
+            font-size: 2.5vh
+            }
+    
+
     }
 
     @media (min-width: 576px) {
@@ -302,13 +311,6 @@
             padding: 0 5vh 0 0;
             }
 
-        #contacto .datos .datos-intro h1{
-            font-size: 8vh
-            }
-    
-        #contacto .datos .datos-intro p{
-            font-size: 4vh
-            }
     }
 
 
