@@ -242,6 +242,16 @@
         #contacto .datos .datos-intro {
             padding: 0 0 5vh 0
             }
+        
+        #contacto .datos .datos-intro h1{
+            font-size: 8vh
+           }
+
+        #contacto .datos .datos-intro p{
+            font-size: 4vh
+            }
+
+
 
         #contacto .datos .datos-item {
             position: relative;
@@ -372,12 +382,13 @@
             }
 
         #contacto .datos .datos-intro {
-            padding: 5vh 0
+            padding: 5vh 0 1vh 0
             }
 
         #contacto .datos .datos-item {
-            height: 25vh;
+            height: auto;
             width: 50%;
+            padding: 1vh 5vh 2vh 0;
             }
 
         #contacto .mapa {
