@@ -91,7 +91,7 @@ $('.call').on('click', function(){
 });
 
 $('.owl-carousel').owlCarousel({
-  loop:true,
+  loop:false,
   margin:3,
   dots:false,
   responsiveClass:true,

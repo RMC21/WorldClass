@@ -123,7 +123,7 @@
     #destinos {
         position: relative;
         height: 100vh;
-        height: 100vw;
+        width: 100%;
         }
 
     .imagen{
@@ -162,104 +162,76 @@
         transition: all 1s ease-in-out;
         }
 
-    .s-detalles {
-        position: absolute;
-        top: 10vh;
-        color: red;
-        opacity: 0;
-        transition: all .5s ease-in-out;
-        padding: 3vh;
-        z-index: 1;
-    }
-
-    .s-detalles .intro {
-        font-size: 6vh
-    }
-
-    .s-detalles p {
-        font-size: 3.5vh        
-    }
-
-    #destinos .s-promo:hover .imagen, #destinos .s-nacional:hover .imagen, #destinos .s-internacional:hover .imagen, #destinos .s-paquete:hover .imagen {
-        transform: scale(1.2) !important;
-        opacity:.4;
-        cursor: pointer;
-        }
-    
-    #destinos .s-promo:hover .item-texto, #destinos .s-nacional:hover .item-texto, #destinos .s-internacional:hover .item-texto, #destinos .s-paquete:hover .item-texto {
-        opacity: 0;
-    }
-
-    #destinos .s-promo:hover .s-detalles, #destinos .s-nacional:hover .s-detalles, #destinos .s-internacional:hover .s-detalles, #destinos .s-paquete:hover .s-detalles {
-        opacity: 1;
-    }
-
-    #destinos .s-intro h1 {
-        font-size: 6vw
-        }
-
-    #destinos .s-titulo {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        padding: 2vh;
-        color: #ffffff;
-        z-index: 1;
-    }
-
-    #destinos .s-titulo h3 {
-        font-size: 2vw;
-        font-family: Oswald-Light;
-        transition: all .5s ease-in-out
-    }
-
-    #destinos .s-titulo span {
-        font-size: 2vw;
-        font-family: Oswald-SemiBold;
-        transition: all .5s ease-in-out
-    }
-
-    #destinos .s-promo:hover .s-titulo h3, #destinos .s-nacional:hover .s-titulo h3, #destinos .s-internacional:hover .s-titulo h3, #destinos .s-paquete:hover .s-titulo h3 {
-        font-size: 2.5vw;
-    }
-
-    #destinos .s-promo:hover .s-titulo span, #destinos .s-nacional:hover .s-titulo span, #destinos .s-internacional:hover .s-titulo span, #destinos .s-paquete:hover .s-titulo span {
-        font-size: 2.5vw !important;
-    }
-
-    #s-carousel .carousel-item {
+    #s-carousel, #s-carousel .carousel-item {
         height: 25vh;
         width: 100%
     }
 
-    .item-texto {
-        position: relative;
-        color: #ffffff;
-        top: 10vh;
-        text-align: center;
-        z-index: 1;
-        transition: all .5s ease-in-out;
-        opacity: 1;
-    }
+    #d-destinos {
+        padding-top: 20vh;
+        padding-bottom: 20vh
+        }
 
-    .item-texto h1 {
-        font-size: 5vh
-    }
+    #d-destinos .tarjeta {
+        position: relative;
+        color: #fff;
+        height: 35vh;
+        overflow: hidden;
+        box-sizing: border-box;
+        -webkit-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+        }
+
+    .owl-nav {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 40%;
+        left:0;
+        }
+        
+        .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+        position: absolute;
+        background-color: rgba(255,255,255,.6);
+        height: 10vh;
+        width: 6vh;
+        display: table-cell;
+        z-index: 10;
+        opacity:1;
+        transition: all .5s ease-in-out
+        }
+        
+        .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev span {
+        color: #ffffff;
+        }
+        
+        .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+        }
+        
+        .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+        }
+        
+        .owl-carousel .owl-nav button.owl-prev.disabled, .owl-carousel .owl-nav button.owl-next.disabled {
+        opacity: 0
+        }
+        
+        .owl-carousel .owl-nav button.owl-next.disabled {
+        right:-2rem
+        }
+        
+        .owl-carousel .owl-nav button.owl-prev.disabled {
+        left: -2rem
+        }
+
 
     @media (max-width: 576px) {
 
         #destinos .s-intro h1 {
             font-size: 5vw
         }
-
-        #destinos .s-titulo h3 {
-            font-size: 4vw;
-        }
-
-        #destinos .s-titulo span {
-            font-size: 5vw;
-        }
-    
     }
 
     @media (min-width: 768px) { 
