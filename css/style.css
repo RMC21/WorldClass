@@ -239,6 +239,10 @@
             float: left;
             }
 
+        #contacto .datos .datos-intro {
+            padding: 0 0 5vh 0
+            }
+
         #contacto .datos .datos-item {
             position: relative;
             height: 30vh;
@@ -365,6 +369,10 @@
             height: 100vh;
             width: 60%;
             padding: 5vh
+            }
+
+        #contacto .datos .datos-intro {
+            padding: 5vh 0
             }
 
         #contacto .datos .datos-item {
