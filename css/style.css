@@ -225,13 +225,61 @@
         left: -2rem
         }
 
+        #contacto{
+            position: relative;
+            min-height: 100vh;
+            width: 100%
+        }
+
+        #contacto .datos {
+            position: relative;
+            min-height: 100vh;
+            width: 100%;
+            padding: 2.5vh;
+            float: left;
+            }
+
+        #contacto .datos .datos-item {
+            position: relative;
+            height: 30vh;
+            width: 50%;
+            padding: 0 1vh 0 0;
+            float: left
+            }
+
+        #contacto .datos .datos-item h3 {
+            font-size: 5vh
+        }
+
+        #contacto .datos .datos-item p, #contacto .datos .datos-item a {
+            font-size: 2.5vh;
+            margin: 0
+        }
+
+        #contacto .mapa {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            float: left;
+        }
+
 
     @media (max-width: 576px) {
 
         #destinos .s-intro h1 {
             font-size: 5vw
         }
+
     }
+
+    @media (min-width: 576px) {
+
+        #contacto .datos .datos-item {
+            width: 33%;
+            padding: 0 2vh 0 0;
+            }
+    }
+
 
     @media (min-width: 992px) { 
         
@@ -295,6 +343,27 @@
         #s-carousel .carousel-item {
             height: 100vh;
             width: 100%
+        }
+
+        #contacto{
+            height: 100vh;
+            width: 100%
+        }
+
+        #contacto .datos {
+            height: 100vh;
+            width: 60%;
+            padding: 5vh
+            }
+
+        #contacto .datos .datos-item {
+            height: 25vh;
+            width: 50%;
+            }
+
+        #contacto .mapa {
+            height: 100vh;
+            width: 40%;
         }
 
 
