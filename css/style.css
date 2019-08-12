@@ -251,7 +251,7 @@
             font-size: 5vh
         }
 
-        #contacto .datos .datos-item p, #contacto .datos .datos-item a {
+        #contacto .datos .datos-item p {
             font-size: 2.5vh;
             margin: 0
         }
@@ -269,6 +269,17 @@
         #destinos .s-intro h1 {
             font-size: 5vw
         }
+       
+        #contacto .datos .datos-item {
+            height: 30vh;
+            padding: 0 1vh 0 0;
+            }
+        
+        #contacto .datos .datos-item.mail{
+            height: auto;
+            width: 100%;
+            padding: 3vh 1vh 3vh 0;
+            }
 
     }
 
