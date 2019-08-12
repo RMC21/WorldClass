@@ -120,7 +120,7 @@
         transform: scaleX(1);
         }
 
-    #destinos {
+    .filtro {
         position: relative;
         height: 100vh;
         width: 100%;
@@ -144,7 +144,7 @@
         z-index: 1;
         }
 
-    #destinos .s-intro {
+    .filtro .s-intro {
         height: auto;
         width: 100%;
         float: left;
@@ -153,13 +153,32 @@
         transition: all 1s ease-in-out;
         }
 
-   #destinos .s-promo, #destinos .s-nacional, #destinos .s-internacional, #destinos .s-paquete {
+   .filtro .s-filtro {
         position: relative;
         height: 25vh;
         width: 50%;
         float: left;
         -webkit-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
+        }
+
+    .filtro .s-filtro .t-filtro {
+        position: absolute;
+        color: #ffffff;
+        bottom: 1vh;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        }
+
+    .filtro .s-filtro .t-filtro h1 {
+        font-size: 3vh;
+        font-family: Oswald-Light;
+        padding-left: 1vh
+        }
+
+    .filtro .s-filtro .t-filtro h1 span {
+        font-family: Oswald-Medium
         }
 
     #s-carousel, #s-carousel .carousel-item {
@@ -190,7 +209,7 @@
         left:0;
         }
         
-        .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
         position: absolute;
         background-color: rgba(255,255,255,.6);
         height: 10vh;
@@ -201,7 +220,7 @@
         transition: all .5s ease-in-out
         }
         
-        .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev span {
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev span {
         color: #ffffff;
         }
         
@@ -261,24 +280,35 @@
 
         #contacto .datos .datos-item h3 {
             font-size: 5vh
-        }
+            }
 
         #contacto .datos .datos-item p {
             font-size: 2.5vh;
             margin: 0
-        }
+            }
 
         #contacto .mapa {
             position: relative;
             height: 100vh;
             width: 100%;
             float: left;
-        }
+            }
+
+        .credito {
+            float: left;
+            height: auto;
+            width: 100%;
+            background-color: aqua;
+            border-top: 1vh solid red;
+            padding: 2.5vh 0;
+            text-align: center;
+            z-index: 1;
+            }
 
 
     @media (max-width: 576px) {
 
-        #destinos .s-intro h1 {
+        .filtro .s-intro h1 {
             font-size: 5vw
         }
        
@@ -299,8 +329,7 @@
     
         #contacto .datos .datos-intro p{
             font-size: 2.5vh
-            }
-    
+            }  
 
     }
 
@@ -357,20 +386,44 @@
             padding: 0;
             }
 
-        #destinos .s-intro {
+        .filtro .s-intro {
             height: 100vh;
             width: 30%;
             padding: 10vw 2vw
             }
 
 
-        #destinos .s-intro h1 {
+        .filtro .s-intro h1 {
             font-size: 3.5vw
             }
     
-       #destinos .s-promo, #destinos .s-nacional, #destinos .s-internacional, #destinos .s-paquete {
+       .filtro .s-filtro {
             height: 100vh;
             width: 17.5%;
+            }
+
+        .filtro .s-filtro .t-filtro {
+            position: absolute;
+            color: #ffffff;
+            bottom: 5vh;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            }
+
+            .filtro .s-filtro .t-filtro h1 {
+                font-size: 5vh;
+                font-family: Oswald-Light;
+                padding-left: 3vh
+                }
+        
+            .filtro .s-filtro .t-filtro h1 span {
+                font-family: Oswald-Medium
+                }
+        
+            #s-carousel, #s-carousel .carousel-item {
+                height: 25vh;
+                width: 100%
             }
 
         #s-carousel .carousel-item {
