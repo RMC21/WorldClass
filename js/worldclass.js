@@ -100,11 +100,11 @@ $('.owl-carousel').owlCarousel({
           items:1,
           nav:true
       },
-      600:{
-          items:3,
+      768:{
+          items:2,
           nav:false
       },
-      1000:{
+      992:{
           items:4,
           nav:true,
           loop:false
