@@ -69,7 +69,7 @@
         
     #mainNav.nav-cambio {
         background-color: blue;
-        padding: .75rem 0 0 0
+        padding: 0
         }
 
     #mainNav .nav-link {
@@ -128,6 +128,7 @@
         background-color: #4074b5;
         color: #ffffff;
         padding-right: 5vw;
+        justify-content: space-around!important;
         transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
         -webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
         -moz-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
@@ -145,13 +146,13 @@
         }
 
     .mostrar {
-        top: 5vh !important;
+        top: 0 !important;
         opacity: 1 !important
        }
 
     .filtro {
         position: relative;
-        height: auto;
+        height: 100vh;
         width: 100%;
         }
 
@@ -576,6 +577,7 @@
             }
 
             #secnav {
+                justify-content: flex-end!important;
                 padding-right: 2.5vw;
                 }
             
