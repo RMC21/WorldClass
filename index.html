@@ -31,7 +31,7 @@
 <body id="pagina">
 
     <nav id="mainNav">
-        <ul class="nav justify-content-around">
+        <ul class="nav justify-content-around" id="primnav">
             <li class="nav-item wc">
                 <a class="nav-link js-scroll-trigger" href="#inicio"><span>Inicio</span></a>
               </li>
@@ -47,8 +47,28 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contacto"><span>Contacto</span></a>
               </li>
+              <li class="nav-item" style="display: none; visibility: hidden">
+                <a class="nav-link navowl js-scroll-trigger" href="#d-destinos" style="display: none; visibility: hidden"></a>
+              </li>
           </ul>
       </nav>
+      <ul class="nav justify-content-end" id="secnav">
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#"><span>Promociones</span></a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#"><span>Nacional</span></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#"><span>Servicios</span></a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger b-nosotros" href="#"><span>Internacional</span></a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#"><span>Paquetes</span></a>
+            </li>
+        </ul>
 
   <section id="inicio">
 
@@ -61,6 +81,8 @@
       </div>
     
     <div class="s-promo s-filtro">
+
+        <a class="js-scroll-trigger" href="#d-destinos"></a>
 
         <div class="t-f-detalles">
             <p class="pcpal">¡RECOMENDACIONES PARA TI!<p>
@@ -210,6 +232,11 @@
     </div>
 
   </section>
+
+  <div class="d-block d-lg-none">
+      <h3>Solicita tu cotización</h3>
+        <p>Vuelo + Hotel + Vehículo + Seguro de viaje + Crucero Obten descuentos cuando reserves un vuelo a través de nosotros.</p>
+    </div>
 
   <section id="d-destinos">
 

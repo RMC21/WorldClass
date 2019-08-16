@@ -16,13 +16,6 @@ $( document ).ready(function() {
     }
   });
 
-  var medida = function() {
-    if (screen.width >= 992) {
-        // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
@@ -34,61 +27,37 @@ $( document ).ready(function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("nav-cambio");
       $(".wc").removeClass("oculto");
-
+      barra();
     } else {
       $("#mainNav").removeClass("nav-cambio");
       $(".wc").addClass("oculto");
+      barra();
     };
   };
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse); 
-    }
-    
-    
-    
-    else {
 
-        // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 56
-  });
-
-  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top >= 1000) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-    };
-  };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
-    };
-  };
-
-  medida();
-
-  $('#destinos').on('click', 'a', function(){
+  $('#destinos').on('click', 'a', function() {
     $('.destinos').removeClass('active');
     var selected = $(this);
     selected.toggleClass('active');
-});
+    });
 
-$('.call').on('click', function(){
+$('.call').on('click', function() {
     $('.full-section').toggleClass('aparece');
     $('#pagina').toggleClass('noscroll');
     $('.b-nosotros').trigger('click');
-});
+    });
+
+function barra() {
+  if ($('.navowl').hasClass('active')) {
+    $('#secnav').addClass('mostrar');
+  } else {
+    $('#secnav').removeClass('mostrar');
+  };
+}
 
 $('.owl-carousel').owlCarousel({
   loop:false,

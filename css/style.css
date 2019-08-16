@@ -81,7 +81,7 @@
                       
     #mainNav .nav-link:hover,.nav-link.active {
         color: #ffffff;
-        opacity: .5;
+        opacity: .75;
         -webkit-transition: all .4s ease-out;
         -moz-transition: all .4s ease-out;
         -ms-transition: all .4s ease-out;
@@ -93,7 +93,7 @@
         content: "";
         position: absolute;
         width: 100%;
-        height: 1px;
+        height: 2px;
         top: 0;
         bottom: unset;
         left: 0;
@@ -120,9 +120,30 @@
         transform: scaleX(1);
         }
 
+    #secnav {
+        position: fixed;
+        width: 100%;
+        top: -10vh;
+        background-color: #4074b5;
+        color: #ffffff;
+        transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+        -webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+        -moz-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+        z-index: 1000;
+        }
+    
+    #secnav a {
+        color: #ffffff;
+        padding-top: 2vh
+    }
+
+    .mostrar {
+        top: 7vh !important;
+       }
+
     .filtro {
         position: relative;
-        height: 100vh;
+        height: auto;
         width: 100%;
         }
 
@@ -197,18 +218,29 @@
         width: 100%;
         height: auto;
         z-index: 2;
+        cursor: pointer;
+        }
+
+    .s-filtro a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 3
         }
 
     .filtro .s-filtro .t-f-detalles  {
-            position: absolute;
-            color: #ffffff;
-            top: 10vh;
-            padding: 2vh;
-            z-index: 2;
-            width: 100%;
-            height: auto;
-            transition: all .5s ease-in-out;
-            opacity: 0;
+        position: absolute;
+        color: #ffffff;
+        top: 10vh;
+        padding: 2vh;
+        z-index: 2;
+        width: 100%;
+        height: auto;
+        transition: all .5s ease-in-out;
+        opacity: 0;
+        cursor: pointer;
         }   
 
     .filtro .s-filtro .t-f-detalles .pcpal{
@@ -251,7 +283,7 @@
     }
 
     #d-destinos {
-        height: 35vh
+        height: auto
         }
 
     #d-destinos .tarjeta {
@@ -271,7 +303,7 @@
         content: "";
         position: absolute;
         width: 100%;
-        height: 1px;
+        height: 2px;
         top: unset;
         bottom: 0;
         left: 0;
@@ -428,12 +460,6 @@
         width: 100%
     }
 
-    #secnav {
-        position: absolute;
-        top: -20vh;
-        transition: all .5s ease-in-out;
-    }
-
     .tarjeta-titulo {
         position: absolute;
         left: 1rem;
@@ -449,7 +475,7 @@
     .owl-intro {
     height: auto;
     width: 100%;
-    padding: 2vw;
+    padding: 20vh 2vw 2vw 2vw;
     }
 
     .owl-intro h1 {
@@ -518,7 +544,7 @@
             content: "";
             position: absolute;
             width: 100%;
-            height: 1px;
+            height: 2px;
             top: unset;
             bottom: 0;
             left: 0;
@@ -540,6 +566,10 @@
             background-color: blue;
             padding: 0;
             }
+
+            .filtro {
+                height: 100vh;
+                }
 
         .filtro .s-intro {
             height: 100vh;
