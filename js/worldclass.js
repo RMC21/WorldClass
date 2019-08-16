@@ -45,6 +45,32 @@ $( document ).ready(function() {
     selected.toggleClass('active');
     });
 
+  $('#secnav').on('click', 'a', function() {
+    $('.navpromo, .navnac, .navinter, .navpaq').removeClass('active');
+    var selected = $(this);
+    selected.addClass('active');
+    });
+
+  $('.s-navpromo').on('click', function() {
+    $('.navpromo, .navnac, .navinter, .navpaq').removeClass('active');
+    $('.navpromo').addClass('active');
+    });
+
+  $('.s-navnac').on('click', function() {
+    $('.navpromo, .navnac, .navinter, .navpaq').removeClass('active');
+    $('.navnac').addClass('active');
+    });
+
+  $('.s-navinter').on('click', function() {
+    $('.navpromo, .navnac, .navinter, .navpaq').removeClass('active');
+    $('.navinter').addClass('active');
+    });
+
+  $('.s-navpaq').on('click', function() {
+    $('.navpromo, .navnac, .navinter, .navpaq').removeClass('active');
+    $('.navpaq').addClass('active');
+    });
+
 $('.call').on('click', function() {
     $('.full-section').toggleClass('aparece');
     $('#pagina').toggleClass('noscroll');
