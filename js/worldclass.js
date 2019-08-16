@@ -79,9 +79,14 @@ $('.call').on('click', function() {
 
 function barra() {
   if ($('.navowl').hasClass('active')) {
-    $('#secnav').addClass('mostrar');
+    $('.seccion-owl').addClass('mostrar');
   } else {
-    $('#secnav').removeClass('mostrar');
+    $('.seccion-owl').removeClass('mostrar');
+  };
+  if ($('.nav-us').hasClass('active')) {
+    $('.seccion-us').addClass('mostrar');
+  } else {
+    $('.seccion-us').removeClass('mostrar');
   };
 }
 
